@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Switch, withRouter } from 'react-router-dom'
 
-function App() {
+//views
+import Home from './js/views/Home'
+import Room from './js/views/Room'
+import RoomDetail from './js/views/RoomDetail'
+
+const routes = [
+  {
+    Component: Home,
+    path: '',
+    id: '1'
+  },
+  {
+    Component: Room,
+    path: 'room',
+    id: '2'
+  },
+  {
+    Component: RoomDetail,
+    path: 'room/:id',
+    id: '3'
+  }
+]
+
+function App(props) {
+  const { history, match } = props
+  const { url } = match
+  const handleRoutes = roomId => {
+    return roomId ? history.push(`room/${roomId}`) : history.push(`/room`)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Switch>
+        {routes.map(route => {
+          return <Route
+            sensitive
+            exact
+            path={`${url}${route.path}`}
+            key={route.id}
+            component={props => (
+              <route.Component handleRoutes={handleRoutes} {...props} />
+            )}
+          ></Route>
+        })}
+      </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default withRouter(App)

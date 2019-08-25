@@ -1,0 +1,47 @@
+$types: (
+  square: (
+    width: 148px,
+    height: 148px,
+    padding: 26px 8px 19px 27px,
+    font-color: #fff,
+    font-size: 31px
+  ),
+  rectangle: (
+    width: 148px,
+    height: 48px,
+    padding: 15px 8px,
+    font-color: #000,
+    font-size: 20px
+  )
+);
+
+.logo {
+  @each $type, $styles in $types {
+    &[data-logo-type='#{$type}'] {
+      width: map-get($styles, width);
+      height: map-get($styles, height);
+      padding: map-get($styles, padding);
+      color: map-get($styles, font-color);
+      font-size: map-get($styles, font-size);
+    }
+  }
+  border: 2px solid #fff;
+  position: relative;
+  &::after,
+  &::before {
+    position: absolute;
+    content: '';
+    @include italic-background;
+    left: -16px;
+  }
+  &:after {
+    top: 0px;
+    width: 16px;
+    height: 140px;
+  }
+  &:before {
+    top: -16px;
+    width: 148px;
+    height: 16px;
+  }
+}

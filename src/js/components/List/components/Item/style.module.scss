@@ -1,0 +1,7 @@
+.item-container {
+  display: flex;
+  align-items: center;
+}
+.item:not(:first-child) {
+  margin-left: 11px;
+}

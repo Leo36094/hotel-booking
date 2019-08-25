@@ -1,0 +1,11 @@
+.hash{
+  width: 100%;
+  display: flex;
+  &-item {
+    width: 1px;
+    height: 12px;
+    background-color: #000;
+    margin-right: 15px;
+    transform: rotate(-45deg);
+  }
+}

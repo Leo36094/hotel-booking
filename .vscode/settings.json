@@ -1,0 +1,8 @@
+{
+  "prettier.jsxSingleQuote": true,
+  "prettier.eslintIntegration": false,
+  "prettier.disableLanguages": [],
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.tslintIntegration": true
+}
