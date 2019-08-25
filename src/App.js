@@ -9,17 +9,17 @@ import RoomDetail from './js/views/RoomDetail'
 const routes = [
   {
     Component: Home,
-    path: '',
+    path: 'hotel-booking',
     id: '1'
   },
   {
     Component: Room,
-    path: 'room',
+    path: 'hotel-booking/room',
     id: '2'
   },
   {
     Component: RoomDetail,
-    path: 'room/:id',
+    path: 'hotel-booking/room/:id',
     id: '3'
   }
 ]
@@ -28,7 +28,7 @@ function App(props) {
   const { history, match } = props
   const { url } = match
   const handleRoutes = roomId => {
-    return roomId ? history.push(`room/${roomId}`) : history.push(`/room`)
+    return roomId ? history.push(`room/${roomId}`) : history.push(`room`)
   }
   return (
     <div className='app'>
