@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/hotel-booking/static/css/main.9144453e.chunk.css",
-    "main.js": "/hotel-booking/static/js/main.9986521f.chunk.js",
-    "main.js.map": "/hotel-booking/static/js/main.9986521f.chunk.js.map",
+    "main.css": "/hotel-booking/static/css/main.f34e586b.chunk.css",
+    "main.js": "/hotel-booking/static/js/main.aaf1e4e2.chunk.js",
+    "main.js.map": "/hotel-booking/static/js/main.aaf1e4e2.chunk.js.map",
     "runtime~main.js": "/hotel-booking/static/js/runtime~main.5e4a2a6d.js",
     "runtime~main.js.map": "/hotel-booking/static/js/runtime~main.5e4a2a6d.js.map",
     "static/css/2.c51b6406.chunk.css": "/hotel-booking/static/css/2.c51b6406.chunk.css",
-    "static/js/2.0238f5a1.chunk.js": "/hotel-booking/static/js/2.0238f5a1.chunk.js",
-    "static/js/2.0238f5a1.chunk.js.map": "/hotel-booking/static/js/2.0238f5a1.chunk.js.map",
+    "static/js/2.46dd8e42.chunk.js": "/hotel-booking/static/js/2.46dd8e42.chunk.js",
+    "static/js/2.46dd8e42.chunk.js.map": "/hotel-booking/static/js/2.46dd8e42.chunk.js.map",
     "index.html": "/hotel-booking/index.html",
-    "precache-manifest.59f68a582028183802ff3041877f6e06.js": "/hotel-booking/precache-manifest.59f68a582028183802ff3041877f6e06.js",
+    "precache-manifest.52d489ef58bfa644bf111282248c5904.js": "/hotel-booking/precache-manifest.52d489ef58bfa644bf111282248c5904.js",
     "service-worker.js": "/hotel-booking/service-worker.js",
     "static/css/2.c51b6406.chunk.css.map": "/hotel-booking/static/css/2.c51b6406.chunk.css.map",
-    "static/css/main.9144453e.chunk.css.map": "/hotel-booking/static/css/main.9144453e.chunk.css.map"
+    "static/css/main.f34e586b.chunk.css.map": "/hotel-booking/static/css/main.f34e586b.chunk.css.map",
+    "static/media/deluxeDoubleRoom.jpeg": "/hotel-booking/static/media/deluxeDoubleRoom.82f94b86.jpeg",
+    "static/media/deluxeSingleRoom.jpeg": "/hotel-booking/static/media/deluxeSingleRoom.0dfe4887.jpeg",
+    "static/media/deluxeTwinRoom.jpeg": "/hotel-booking/static/media/deluxeTwinRoom.44a574b9.jpeg",
+    "static/media/singleRoom.jpeg": "/hotel-booking/static/media/singleRoom.8175fcea.jpeg",
+    "static/media/twinRoom.jpeg": "/hotel-booking/static/media/twinRoom.82f94b86.jpeg"
   }
 }
