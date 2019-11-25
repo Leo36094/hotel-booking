@@ -44,7 +44,7 @@ function RoomDetail(props) {
           }
         >
           {loaded ? null : 'Loading'}
-          <Link to='/hotel-booking' replace>
+          <Link to='/hotel-booking/' replace>
             <Logo style={{ margin: '60px' }} />
           </Link>
           <div className={cx('room-detail-header__photos')}>

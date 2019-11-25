@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch, withRouter } from 'react-router-dom'
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 
 //views
 import Home from './js/views/Home'
@@ -14,19 +14,19 @@ const routes = [
   },
   {
     Component: Room,
-    path: 'hotel-booking/room',
+    path: 'room',
     id: '2'
   },
   {
     Component: RoomDetail,
-    path: 'hotel-booking/room/:id',
+    path: 'room/:id',
     id: '3'
   }
 ]
 
 function App(props) {
-  const { history, match } = props
-  const { url } = match
+  const { history } = props
+
   const handleRoutes = roomId => {
     return roomId ? history.push(`room/${roomId}`) : history.push(`room`)
   }
@@ -37,13 +37,14 @@ function App(props) {
           return <Route
             sensitive
             exact
-            path={`${url}${route.path}`}
+            path={`/${route.path}`}
             key={route.id}
             component={props => (
               <route.Component handleRoutes={handleRoutes} {...props} />
             )}
           ></Route>
         })}
+        <Redirect push from='/' to='/hotel-booking'></Redirect>
       </Switch>
     </div>
   )
